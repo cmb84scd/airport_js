@@ -4,4 +4,8 @@ class Airport {
     return plane
   }
 
+  takeOff(plane) {
+    
+  }
+
 }

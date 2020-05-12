@@ -16,4 +16,10 @@ describe('Airport', function() {
 
   });
 
+  describe('take off', function() {
+    it('takes off a plane', function(){
+      expect(airport.takeOff(plane)).not.toEqual(plane);
+    });
+  });
+
 });
