@@ -20,6 +20,9 @@ describe('Airport', function() {
     it('takes off a plane', function(){
       expect(airport.takeOff(plane)).not.toEqual(plane);
     });
+    it('returns a message', function() {
+      expect(airport.takeOff(plane)).toContain(" has taken off");
+    });
   });
 
 });
