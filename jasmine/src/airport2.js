@@ -5,14 +5,12 @@ class Airport {
   }
 
   land(plane){
-
-    if (this.hangar.length >= 1) {
-    //  return ("Airport Full");
-      throw new Error("Airport Full")
+    try{
+        if(this.hangar.length >= 5)
+        throw "Airport Full"
     }
-      this.hangar.push(plane)
-      return plane
-
+       this.hangar.push(plane)
+       return plane
   }
 
   takeOff(plane) {
