@@ -10,6 +10,9 @@ class Airport {
   };
 
   clearForLanding(plane) {
+    if(this.isStormy()) {
+      throw new Error('cannot land during storm');
+    }
     this._hangar.push(plane);
   };
 
